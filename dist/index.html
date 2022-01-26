@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Static Vanilla Tailwind Base Conversion</title>
+</head>
+<body class="bg-white">
+    <section class="container mx-auto px-4">
+        <section id="hero" class="flex h-64 p-4 mt-9 rounded bg-cyan-500 shadow-xl">
+            <div class="p-3 text-slate-50">
+                <h1 class="text-6xl font-bold">Your Favorite:</h1>
+                <h1 class="text-6xl font-bold pl-8">Base Converter</h1>
+            </div>
+        </section>
+        <section class="flex flex-col p-4 my-6 rounded bg-cyan-500 shadow-2xl" id="converters">
+            <label class="font-bold text-xl text-slate-50" for="base-10">Base 10</label>
+            <input 
+                class="text-xl m-2 p-4 border-solid rounded border-2 border-gray-600" 
+                id="base-ten"
+                placeholder="Base 10 - Decimal"
+                type="text"
+            >
+            <label class="font-bold text-xl text-slate-50" for="base-2">Base 2</label>
+            <input 
+                class="text-xl m-2 p-4 border-solid rounded border-2 border-gray-600" 
+                id="base-two"
+                placeholder="Base 2 - Binary"
+                pattern="[1,0]"
+                type="text"
+            >
+            <label class="font-bold text-xl text-slate-50" for="base-8">Base 8</label>
+            <input 
+                class="text-xl m-2 p-4 border-solid rounded border-2 border-gray-600" 
+                id="base-eight"
+                placeholder="Base 8 - Octal"
+                type="text"
+            >
+            <label class="font-bold text-xl text-slate-50" for="base-16">Base 16</label>
+            <input 
+                class="text-xl m-2 p-4 border-solid rounded border-2 border-gray-600" 
+                id="base-sixteen"
+                placeholder="Base 16 - Hex"
+                type="text"
+            >
+        </section>
+    </section>
+</body>
+<script src="./index.js"></script>
+</html>
+
