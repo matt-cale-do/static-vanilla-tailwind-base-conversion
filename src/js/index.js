@@ -75,7 +75,7 @@ const fromBaseSixteen = (e) => {
     }
     if (!HEX_REGEX.test(n)) {
         alert("You make me sad")
-        toBaseSixteen.value = n.slice(0, -1)
+        baseSixteenInput.value = n.slice(0, -1)
         return
     }
     const dec = parseInt(n, 16)

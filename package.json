@@ -4,13 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile-styles": "tailwindcss -i ./src/main.css -o ./dist/main.css",
-    "compile-styles-watch": "tailwindcss -i ./src/main.css -o ./dist/main.css --watch"
+    "scripts": "esbuild src/js/index.js --bundle --outfile=dist/main.js",
+    "scripts-watch": "esbuild src/js/index.js --bundle --outfile=dist/main.js --watch",
+    "styles": "tailwindcss -i ./src/main.css -o ./dist/main.css",
+    "styles-watch": "tailwindcss -i ./src/main.css -o ./dist/main.css --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "esbuild": "^0.14.14",
     "tailwindcss": "^3.0.15"
   }
 }

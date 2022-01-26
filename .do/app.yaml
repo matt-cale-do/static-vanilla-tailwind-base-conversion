@@ -1,0 +1,8 @@
+name: svtbc-base-converter
+static_sites:
+- name: site
+  github:
+    repo: matt-cale-do/static-vanilla-tailwind-base-conversion
+    branch: main
+  output_dir: dist
+  catchall_document: index.html

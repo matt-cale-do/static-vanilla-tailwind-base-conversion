@@ -5,49 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <title>Static Vanilla Tailwind Base Conversion</title>
 </head>
 <body class="bg-white">
-    <section class="container mx-auto px-4">
-        <section id="hero" class="flex h-64 p-4 mt-9 rounded bg-cyan-500 shadow-xl">
+    <section class="flex flex-col h-screen">
+        <header id="hero" class="flex p-6 mx-8 mt-4 rounded bg-blue-500 shadow-xl">
             <div class="p-3 text-slate-50">
-                <h1 class="text-6xl font-bold">Your Favorite:</h1>
-                <h1 class="text-6xl font-bold pl-8">Base Converter</h1>
+                <h1 class="text-8xl font-bold">ABC</h1>
+                <h1 class="text-6xl font-light">Another Base Converter</h1>
             </div>
-        </section>
-        <section class="flex flex-col p-4 my-6 rounded bg-cyan-500 shadow-2xl" id="converters">
-            <label class="font-bold text-xl text-slate-50" for="base-10">Base 10</label>
-            <input 
-                class="text-xl m-2 p-4 border-solid rounded border-2 border-gray-600" 
-                id="base-ten"
-                placeholder="Base 10 - Decimal"
-                type="text"
-            >
-            <label class="font-bold text-xl text-slate-50" for="base-2">Base 2</label>
-            <input 
-                class="text-xl m-2 p-4 border-solid rounded border-2 border-gray-600" 
-                id="base-two"
-                placeholder="Base 2 - Binary"
-                pattern="[1,0]"
-                type="text"
-            >
-            <label class="font-bold text-xl text-slate-50" for="base-8">Base 8</label>
-            <input 
-                class="text-xl m-2 p-4 border-solid rounded border-2 border-gray-600" 
-                id="base-eight"
-                placeholder="Base 8 - Octal"
-                type="text"
-            >
-            <label class="font-bold text-xl text-slate-50" for="base-16">Base 16</label>
-            <input 
-                class="text-xl m-2 p-4 border-solid rounded border-2 border-gray-600" 
-                id="base-sixteen"
-                placeholder="Base 16 - Hex"
-                type="text"
-            >
-        </section>
+        </header>
+        <main class="flex-auto">
+            <section class="flex flex-col px-4 py-8 mx-8 mt-8 rounded bg-blue-500 shadow-2xl" id="converters">
+                <label class="font-bold text-xl text-slate-50" for="base-2">Base 2 - Binary</label>
+                <input 
+                    class="text-xl m-2 p-4 border-solid rounded border-2 border-gray-600" 
+                    id="base-two"
+                    placeholder="Base 2 - Binary"
+                    type="text"
+                >
+                <label class="font-bold text-xl text-slate-50" for="base-8">Base 8 - Octal</label>
+                <input 
+                    class="text-xl m-2 p-4 border-solid rounded border-2 border-gray-600" 
+                    id="base-eight"
+                    placeholder="Base 8 - Octal"
+                    type="text"
+                >
+                <label class="font-bold text-xl text-slate-50" for="base-10">Base 10 - Decimal</label>
+                <input 
+                    class="text-xl m-2 p-4 border-solid rounded border-2 border-gray-600" 
+                    id="base-ten"
+                    placeholder="Base 10 - Decimal"
+                    type="text"
+                >
+                <label class="font-bold c text-slate-50" for="base-16">Base 16 - Hexidecimal</label>
+                <input 
+                    class="text-xl m-2 p-4 border-solid rounded border-2 border-gray-600" 
+                    id="base-sixteen"
+                    placeholder="Base 16 - Hexidecimal"
+                    type="text"
+                >
+            </section>
+        </main>
+        <footer class="p-5 font-light text-lg bg-blue-500 text-slate-50 rounded">
+            <p class="text-center">Made by a 🐌</p>
+            <p class="text-center">Happily hosted on DigitalOcean ⛵️</p>
+        </footer>
     </section>
 </body>
-<script src="./index.js"></script>
+<script src="./main.js"></script>
 </html>
-
